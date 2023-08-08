@@ -22,3 +22,4 @@ function sortMaker(arr) {
 console.log(sortMaker([5, 8])); 
 console.log(sortMaker([3, 3])); 
 console.log(sortMaker([-2, 7])); 
+console.log(sortMaker([0, 7])); 
