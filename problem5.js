@@ -1,6 +1,6 @@
 function canPay(changeArray, totalDue) {
     if (!Array.isArray(changeArray) || changeArray.length ==0) {
-      return "Give vangti me taka"; 
+      return "Give me your vangti  taka"; 
     }
   
     let totalChange = 0;
@@ -20,5 +20,5 @@ function canPay(changeArray, totalDue) {
   
   const Pay = canPay(changeArray, totalDue);
   
-  console.log(Pay); // true
+  console.log(Pay); 
   

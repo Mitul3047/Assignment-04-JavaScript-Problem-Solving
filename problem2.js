@@ -1,19 +1,13 @@
+      
 function matchFinder(string1, string2) {
-    // Check if both inputs are strings
     if (typeof string1 !== 'string' || typeof string2 !== 'string') {
-        return " inputs should be strings.";
+        return false; 
     }
-
-    // Check for exact match
-    if (string1.includes(string2)) {
-        return true;
-    }
-
-    return false;
+    const similarElement = string1.indexOf(string2) !== -1
+    return  similarElement;
 }
-
-// Test cases
-console.log(matchFinder("john Doe", "oh")); // Output: true
-console.log(matchFinder("javaScript", "code")); // Output: false
-console.log(matchFinder("peter", "ete"));    // Output: Both inputs should be strings.
-console.log(matchFinder("abc", 123));         // Output: Both inputs should be strings.
+console.log(matchFinder("john Doe", "oh"));
+console.log(matchFinder("javaScript", "code"));
+console.log(matchFinder("peter", "ete"));
+console.log(matchFinder("abc", 123));       
+console.log(matchFinder("abc", ""));       
